@@ -1,0 +1,6 @@
+[Activity]
+name = Taller del Artesano
+activity_version = 1
+bundle_id = org.laboratoriosazucar.Mi_Juego
+icon = activity
+exec = sugar-activity activity.Activity
