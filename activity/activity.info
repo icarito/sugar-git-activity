@@ -1,6 +1,6 @@
 [Activity]
 name = Taller del Artesano
-activity_version = 1
+activity_version = 3
 bundle_id = org.laboratoriosazucar.Mi_Juego
 icon = activity
 exec = sugar-activity activity.Activity
