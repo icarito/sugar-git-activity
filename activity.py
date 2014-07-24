@@ -317,9 +317,9 @@ class Activity(sugar.activity.activity.Activity):
     def restart_game(self, widget):
         global JUEGO
 
-        for sprite in JUEGO._sprites.copy():
+        for sprite in self.game._sprites.copy():
             sprite.kill()
-        JUEGO.background.fill((255,255,255))
+        self.game.background.fill((255,255,255))
 
         self.box.set_page(0)
         watch = gtk.gdk.Cursor(gtk.gdk.WATCH)
@@ -398,8 +398,12 @@ class FileViewer(gtk.ScrolledWindow):
         selection = self._tree_view.get_selection()
         selection.connect('changed', self.__selection_changed_cb)
 
+        renderer = gtk.CellRendererPixbuf()
+        renderer.set_property('stock-id', gtk.STOCK_DIRECTORY)
+
         cell = gtk.CellRendererText()
         column = gtk.TreeViewColumn()
+        column.pack_start(renderer, True)
         column.pack_start(cell, True)
         column.add_attribute(cell, 'text', 0)
         self._tree_view.append_column(column)

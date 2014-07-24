@@ -10,8 +10,8 @@ pygame.mixer.init()
 class Elemento1(spyral.Sprite):
     def __init__(self, scene):
         spyral.Sprite.__init__(self, scene)
-        self.image = spyral.Image(size=(100,100)).fill((255,0,0))
-        self.pos = (200,200)
+        self.image = spyral.Image(size=(200,300)).fill((255,255,0))
+        self.pos = (900,200)
 
     def comportamiento1(self):
         # Aquí colocar comportamientos, animaciones, etc.
