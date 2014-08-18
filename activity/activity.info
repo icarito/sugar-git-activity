@@ -1,6 +1,6 @@
 [Activity]
-name = Taller del Artesano
+name = Fugit
 activity_version = 3
-bundle_id = org.laboratoriosazucar.Mi_Juego
+bundle_id = org.laboratoriosazucar.Fugit
 icon = activity
 exec = sugar-activity activity.Activity
