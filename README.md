@@ -1,10 +1,5 @@
-Videogame Artisan Workshop
-==========================
-
-This is an interactive game authoring learning environment for Sugar and Spyral.
-Consult http://platipy.org/ for documentation of the game framework we use.
-Thanks to the Platipy team for the great tool and all other's on whose shoulders
-we stand.
+"Fugit" is a Sugar Activity for browsing Git repositories
+=========================================================
 
 Copyright (C) 2014 Sebastian Silva, Laura Vargas
 
